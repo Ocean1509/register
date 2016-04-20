@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>注册界面</title>
+	<link rel="stylesheet" href="static/css/base.css">
+</head>
+<body>
+	<div class="top-bar">
+		<div class="main">
+			<div class="top-bar-l fl">
+				<span>客服热线 :</span>
+				<span>400 988 6888</span>
+				<span class="concern">关注我们:</span>
+				<a href="javascript:;"><span class="icon icon-wx"></span></a>
+				<a href="javascript:;"><span class="icon icon-wb"></span></a>
+			</div>
+			<div class="top-bar-r fr">
+				<ul>
+					<li><a href="javascript:;" class="blue">登录</a></li>
+					<li><a href="javascript:;" class="orange">注册</a></li>
+					<li><a href="javascript:;" class="top-bar-r1">
+						<span class="icon icon-app"></span>下载App
+					</a></li>
+					<li><a href="javascript:;" class="top-bar-r2">
+						<span class="icon icon-money"></span>新手福利
+					</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="header">
+		<div class="main">
+			<div class="logo fl"><img src="static/images/logo.png" alt=""></div>
+			<div class="title1 fl">个人用户注册</div>
+			<div class="title2 fr">
+				<a href="#"><span class="icon icon-register"></span>
+				企业用户注册</a>
+			</div>
+		</div>
+	</div>
+	<div class="register">
+		<div class="register-img fl"><img src="static/images/reg-img.png" alt=""></div>
+		<div class="register-form fl">
+			<form name="register" action="post">
+				<dl>
+					<dd>
+						<div class="fl register-name"><em class="start">*</em><label for="name"><strong>会 员 名</strong> </label></div>
+						<input class="input" type="text" name="name" id="J_name" maxlength="20">
+						<p class="reister-info" style="display:none" id="J_name_info"><span class="icon icon-register icon-tips"></span> 4-20位字符，只能包含字母、数字或下划线</p>
+						<p class="reister-info red" style="display:none" id="J_name_error"><span class="icon icon-register icon-error"></span> 请按正确格式输入会员名</p>
+						<p class="reister-info green" id="J_name_right" style="display:none"><span class="icon icon-register icon-right"></span> 会员名可用</p>
+						<i class="placeholder" id="J_input_tips1">请输入注册会员名</i>
+					</dd>
+					<dd class="d-password">
+						<div class="fl register-password"><em class="start">*</em><label for="password"><strong>登录密码</strong></label></div>
+						<input class="input" type="password" id="J_password" name="password" maxlength="16">
+						<div class="level " style="display:none" id="J_level"><span class="b-orange" id="J_l_low">低</span><span id="J_l_mid">中</span><span id="J_l_high">高</span></div>
+						<p class="reister-info reister-pw"  style="display:none" id="J_pw_info"><span class="icon icon-register icon-tips"></span> 6-16位，只包含字母（区分大小写）和数字</p>
+						<p class="reister-info red reister-pw" style="display:none" id="J_pw_error"><span class="icon icon-register icon-error"></span> 请输入正确的密码</p>
+						<p class="reister-info reister-pw" id="J_pw_right" style="display:none"><span class="icon icon-register icon-right"></span></p>
+						<i class="placeholder" id="J_input_tips2">请输入登录密码</i>
+					</dd>
+					<dd>
+						<div class="fl register-password"><em class="start">*</em><label for="repassword"><strong>确认密码</strong></label></div>
+						<input class="input" type="password" id="J_repassword" name="rpassword" maxlength="16">
+						<p class="reister-info" id="J_rpw_info" style="display:none"><span class="icon icon-register icon-tips"></span> 请再次输入密码</p>
+						<p class="reister-info red" style="display:none" id="J_rpw_error"><span class="icon icon-register icon-error"></span> 两次密码不一致</p>
+						<p class="reister-info" style="display:none" id="J_rpw_right"><span class="icon icon-register icon-right"></span></p>
+						<i class="placeholder" id="J_input_tips3">确认登录密码</i>
+					</dd>
+					<dd>
+						<div class="fl register-pic"><em class="start">*</em><label for="repassword"><strong>图片验证码</strong></label></div>
+						<input class="input" type="text">
+					</dd>
+					<dd>
+						<div class="items-agree">
+							<input type="checkbox" name="choice">本人已阅读并同意<span class="blue">《鹏金所注册服务协议》</span>
+						</div>
+					</dd>
+				</dl>
+				<div class="reg-go" id="J_reg_go"><a href="#">注册</a></div>
+			</form>
+		</div>
+	</div>
+	<div class="footer clearfix">
+		<div class="footer-top main">
+			<div class="footer-nav fl">
+				<dl>
+					<dt>投资指引 </dt>
+					<dd><a href="">新手指引</a></dd>
+					<dd><a href="">投资收益与费用</a></dd>
+					<dd><a href="">充值与提现</a></dd>
+				</dl>
+				<dl>
+					<dt>安全保障 </dt>
+					<dd><a href="">投资人保障计划</a></dd>
+					<dd><a href="">风险准备金</a></dd>
+					<dd><a href="">平台交易安全</a></dd>
+				</dl>
+				<dl>
+					<dt>账户管理 </dt>
+					<dd><a href="">注册</a></dd>
+					<dd><a href="">账户安全</a></dd>
+					<dd><a href="">安全认证</a></dd>
+				</dl>
+			</div>
+			<div class="app-down fl">
+				<p class="welcom">欢迎下载鹏金所App</p>
+				<p><a href="#"><span class="icon icon-iphone"></span></a></p>
+				<p><a href="#"><span class="icon icon-android"></span></a></p>
+			</div>
+			<div class="concat fl">
+				<p><span>客服热线</span><span class="commont">（工作日：8:30-21:00  非工作日：9:00-18:00）</span></p>
+				<p class="phon400">400 988 6888</p>
+				<p class="service">客服邮箱 info@penging.com    在线客服<span class="message"></span></p>
+			</div>
+		</div>
+		<div class="footer-bottom main">
+			
+			<p class="copy fl"><a href="#"><span class="icon icon-peng"></span></a>&copy;2014~2015  鹏金所  All rights reserved  |  深圳市鹏鼎创盈金融信息服务股份有限公司  |  粤ICP备:14056130号</p>
+			<div class="footer-icon fr ">
+				<a href="#"><span class="icon icon-norton"></span></a>
+				<a href="#" ><span class="icon icon-chengxin"></span></a>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="static/js/base.js"></script>
+	<script type="text/javascript" src="static/js/index.js"></script>
+</body>
+</html>
